@@ -1,0 +1,153 @@
+1.	Faça um programa que leia o preço de 10 produtos. Ao final
+escreva o somatório dos preços.
+soma = 0
+for x in range (10):
+    produtos=float(input("Digite o preço dos produtos: "))
+    soma += produtos
+print (soma)
+
+2. Faça um programa que calcule e escreva no vídeo o somatório
+dos números inteiros de 1 até 50.
+soma = 0
+for x in range (50):
+   soma += 1
+   print (soma)
+print (soma)
+
+3. Faça um programa que leia a idade de 10 pessoas. Ao final
+escreva a média das idades.
+soma=0
+for x in range (10):
+    pessoa=int(input("Digite a idade: "))
+    soma += pessoa
+    media = soma / 10
+print ("A média de idade é: ",media)
+
+4. Elabore um programa que leia o sexo de um número
+indeterminado de pessoas. Ao final escreva a quantidade de
+pessoas cadastradas e o total de pessoas de cada sexo.
+
+somam=0
+somaf=0
+sexo=0
+while sexo != "T":
+    print ("para terminar digite T")
+    sexo=input("Digite o sexo dos aluno da turma: ")
+    if sexo == "masculino":
+        somam += 1
+    elif sexo == "feminino":
+        somaf += 1
+total = somam + somaf
+print ("O total de alunos do sexo feminino é: {}, o total de alunos do sexo masculino é: {}, o  total de aluno da turma é: {}" .format(somaf,somam,total))
+
+5. Crie um programa que leia a altura de um número indeterminado
+de pessoas. Ao final o programa deve informar o total de
+pessoas cadastradas, a quantidade de pessoas com altura
+inferior a 1,60 metros; a quantidade de pessoas com altura
+entre 1,60 metros e 1,80 metros e a quantidade de pessoas com
+altura superior a 1,80 metros.
+soma1=0
+soma2=0
+soma3=0
+alt = 1
+while alt > 0:
+    print ("para terminar digite 0")
+    alt=float(input("Digite o sexo dos aluno da turma: "))
+    if alt < 1.6:
+        soma1 += 1
+    elif alt >= 1.6 and alt < 1.8:
+        soma2 += 1
+    elif alt > 2.5:
+        print ("Verifique a altura digitada !")
+    else:
+        soma3 += 1
+total = soma1 + soma2 + soma3
+print ("Pessoas baixas: {},Pessoas com altura média: {}, Pessoas altas: {}, Total de pessoas cadastradas: {} " .format(soma1,soma2,soma3,total))
+
+6. Elabore um programa que leia a idade de diversas pessoas e ao
+final informe: o total de pessoas cadastradas, a porcentagem
+de pessoas com idade inferior a 18 anos, a porcentagem de
+pessoas com idade igual ou superior a 18 anos.
+soma1=0
+soma2=0
+soma3=0
+alt = 1
+while alt > 0:
+    print ("para terminar digite 0")
+    alt=int(input("Digite A idade dos aluno da turma: "))
+    if alt > 0 and alt < 18:
+        soma1 += 1
+    elif alt >= 18:
+        soma2 += 1
+soma3 = soma1 + soma2
+porc1 = (soma1 / soma3) * 100
+porc2 = (soma2 / soma3) * 100
+print ("Menor de Idade : {},maior de Idade: {}, Total de pessoas cadastradas: {} " .format(soma1,soma2,soma3))
+
+7. Faça um programa que leia vários números inteiros e ao final
+escreva o maior.
+soma=0
+alt = 1
+while alt > 0:
+    print ("para terminar digite 0")
+    alt=int(input("Digite o Número: "))
+    if alt > soma:
+        soma = alt
+print (soma)
+
+8. Crie um programa que leia o nome e a altura de 10 pessoas e
+ao final escreva: a altura média do grupo, o nome e a altura
+da pessoa mais alta.
+soma=0
+altura = 0
+for i in range (10):
+    nome=input("Digite o Nome do Aluno:")
+    alt=float(input("Digite a altura do aluno: "))
+    soma += alt
+    if alt > altura:
+        altura = alt
+        alto = nome
+media = soma / 10
+print ("O nome da pessoa mais alta é: {}, Sua altura é: {}, a média de altura da turma é: {:.2f}" .format(alto,altura,media))
+
+9. A conversão de graus Farenheit para graus centígrados é
+obtida por : C = 5/9 * (F -32). Faça um programa que calcule
+e escreva uma tabela de centígrados em função de graus
+Farenheit, que variam de 100 a 150 de 1 em 1.
+celsius=int(input("Digite a temperatura em Farenheit: "))
+if celsius >= 100 and celsius <= 150:
+    c = (5/9) * (celsius - 32)
+    print ("A temperatura em graus Celses é:{:.2f} " .format(c))
+else:
+    print ("Revise a temperatura")
+
+10. Elabore um programa que leia diversos números e ao final
+escreva: a quantidade de números digitados, a quantidade de
+números pares, a quantidade de números ímpares.
+num = 1
+soma1=0
+soma2=0
+while num > 0:
+    print ("Para terminar digite 0")
+    num=int(input("Digite o Número: "))
+    if num % 2 ==0 and num > 0:
+        soma1 += 1
+    elif num % 2 == 1:
+        soma2+=1
+total = soma1 + soma2
+print ("A quantidade de numeros pares é: {}, números ímpares: {}, a quantidade total de números digitados é: {}".format(soma1,soma2,total))
+
+11. Um determinado material radioativo perde metade de sua massa
+a cada 50 segundos. Dada a massa inicial, em gramas, fazer um
+algoritmo que determine o tempo necessário para que essa
+massa se torne menor do que 0.5 gramas. Escreva a massa
+final, e o tempo. Observação: o usuário deve digitar a massa
+inicial.
+
+cont=0
+massa=float(input("Digite a massa do material em gramas: "))
+while massa >= 0.5:
+    massa = massa/2
+    cont+=1
+total = cont * 50
+print ("Massa final: {:.2f}, tempo total: {} segundos".format(massa,total))
