@@ -1,0 +1,41 @@
+1.	Cria lista vazia “novoCD”
+2.	Função exibir Menu
+3.	Print na tela “1 – Inserir novo CD”
+4.	Print na tela “2 – excluir CD”
+5.	Print na tela “3 – listas CDs”
+6.	Print na tela “4 – Sair”
+7.	Variável solicitando o usuário escolher uma das opções listadas acima
+8.	Retornar variável escolhida pelo usuário
+9.	 
+10.	Função “inserir CD”
+11.	Variável solicitando ao usuário digitar o nome do artista
+12.	Adiciona o nome do artista digitado pelo usuário na lista vazia “novoCD”
+13.	 
+14.	Função “listar CD”
+15.	Varre a variável “listaCD” 
+16.	Print Elemento
+17.	 
+18.	Função “excluir CD” 
+19.	Criação da variável “nome CD” e solicitação ao usuário para excluir um dos CD existentes pelo nome
+20.	Definição do índice para -1
+21.	Criação da variável “encontrou” definido como “false”
+22.	Varre a variável “lista CD”
+23.	Determina índice = índice + 1
+24.	Se a variável elemento for igual a “nomeCD”
+25.	Variável “encontrou” será determinada Verdadeira
+26.	Para o programa
+27.	Se encontrar a listaCD
+28.	Listar a “listaCD”
+29.	 
+30.	Criação do loop, enquanto verdadeiro
+31.	Criação da variável “opção” sendo igual a variável “exibir menu”
+32.	Se a opção for = a 4 faça:
+33.	Para o programa
+34.	Se não for =4 e for igual a 3 faça:
+35.	Listar a variável “listaCD”
+36.	Se não for igual as acimas e for igual a 1 faça:
+37.	Executar variável “inserirCD”
+38.	Se não for nenhuma das opções acima e for igual a 2 faça:
+39.	Executar variável “excluirCD”
+
+Final do Programa.
