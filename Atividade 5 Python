@@ -1,0 +1,102 @@
+1 - tamanho = 50
+aluno = []
+alt=[]
+soma = 0
+for n in range(tamanho):
+aluno.append(input("Digite o seu nome: "))
+alt.append(float(input("Digite a sua altura: ")))
+soma += alt[n]
+media = soma / 50.0
+for n in range (50):
+if alt[n] > media:
+print (f"O aluno {aluno[n]} tem {alt[n]} metros")
+
+2 - matricula = []
+salario = []
+desconto = []
+salarioliq = []
+tamanho = 100
+for i in range (tamanho):
+matricula.append(int(input("Digite a matrícula do empregado: ")))
+salario.append(float(input("Digite o salário do empregado: ")))
+desconto.append((salario[i] /100)11)
+salarioliq.append((salario[i] /100) 89)
+for i in range (tamanho):
+print (f" o funcionário {matricula[i]} recebe {salario[i]} de salário bruto, teve {desconto[i]} de desconto do seu salário e seu salário final será : {salarioliq[i]}")
+
+
+3 - codigo = []
+nome = []
+telefone = []
+tamanho = 100
+for i in range (tamanho):
+codigo.append(int(input("Digite o código do usuário: ")))
+nome.append(input("Digite o nome do usuário: "))
+telefone.append(int(input("Digite o telefone do usuário: ")))
+
+4 - while True:
+x = int(input("Digite o Codigo para pesquisa: "))
+if x in codigo:
+posição = codigo.index(x)
+print ( nome[posição], telefone[posição])
+else:
+print("este código não foi encontrado")
+resposta = input("Quer continuar ?")
+if resposta in "Nn":
+break
+
+5 - num = []
+for i in range(10):
+num.append(int(input("Digite um número: ")))
+num.sort()
+print (f"Números na ordem crescente {num}")
+num.reverse()
+print(f"Números na ordem decrescente {num}")
+
+6 - n=0
+positivos = 0
+negativos = 0
+nulos = 0
+listanum = []
+for i in range(10):
+listanum.append(int(input("Digite o número: ")))
+if listanum[i] > 0:
+positivos += 1
+elif listanum[i] < 0:
+negativos += 1
+else:
+nulos += 1
+print(f'A quantidade de números positivos na lista são {positivos}')
+print(f'A quantidade de números nulos na lista são {nulos}')
+print(f'A quantidade de números negativos da lista são {negativos}')
+
+7 - num = []
+quadrado = []
+tamanho = 3
+for x in range(tamanho):
+num.append(int(input("Digite um número: ")))
+quadrado.append(num[x] ** (1/2))
+print (quadrado)
+
+8 - listanum= []
+listpos = []
+cont = 0
+maior = 0
+for n in range(9):
+listanum.append(int(input('Digite um número: ')))
+if listanum[n] > maior:
+maior = listanum[n]
+for n in range(9):
+if listanum[n] == maior:
+listpos.append(n)
+cont+=1
+print(f'O maior valor digitado foi {maior} e aparece {cont} vezes nas posições', listpos)
+
+9 - a=[]
+b=[]
+c=[]
+for i in range (10):
+a.append(int(input("Digite o Número A: ")))
+b.append(int(input("Digite o Número B: ")))
+c.append(a[i] + b[i])
+print (c)
